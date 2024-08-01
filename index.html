@@ -4,8 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bus Ticketing</title>
+    <!-- Tailwind and daisyUI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    
+<body class="font-raleway max-w-[1400px] mx-auto">
+   <header>
+     <!-- navbar section -->
+     <section class="pt-8">
+      <div class="navbar bg-base-100 ">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+            </div>
+            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-xl">
+              <li><a>Home</a></li>
+              <li><a>About</a></li>
+              <li><a>Destination</a></li>
+              <li><a>Search</a></li>
+            </ul>
+          </div>
+          <a class="btn btn-ghost text-3xl font-extrabold">BusTicketZone</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a>Home</a></li>
+            <li><a>About</a></li>
+            <li><a>Destination</a></li>
+            <li><a>Search</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <div class=" flex justify-center items-center gap-2 bg-gray-100 border-2 border-opacity-20 rounded-xl border-color-text  w-28 h-12">
+            <p class="text-color-text font-bold text-xl">Bus</p>
+            <img class="w-7 h-7" src="./images/bus-icon.png" alt="">
+          </div>
+        </div>
+      </div>
+     </section>
+
+    <!-- banner section -->
+     <section class="h-[550px] bg-pink-300">
+
+     </section>
+   </header>
+   <main>
+
+   </main>
+   <script src="js/ticketing.js"></script>
 </body>
 </html>
