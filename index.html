@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bus Ticketing</title>
+    <link rel="stylesheet" href="./styles/styles.css" >
     <!-- Tailwind and daisyUI -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
 <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="font-raleway max-w-[1400px] mx-auto">
+<body class="font-raleway max-w-[1200px] mx-auto">
    <header>
      <!-- navbar section -->
      <section class="pt-8">
@@ -45,12 +46,81 @@
      </section>
 
     <!-- banner section -->
-     <section class="h-[550px] bg-pink-300">
+     <section class="">
+      <div class="banner-bg h-[600px]  w-full rounded-3xl flex justify-center items-center lg:relative">
+        <div class="text-white text-center h-80 w-[750px] gap-8 flex flex-col justify-center items-center">
+          <p class="font-extrabold text-6xl">End-to-End Travel with <br><span class="text-color-text">BusTicketZone</span></p>
+          <p class="font-inter text-xl">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
+          <button class="bg-color-text w-[150px] h-[70px] rounded-2xl font-bold text-xl text-black">Buy Tickets</button>
+        </div>
+      </div>
+      <!-- cards -->
+      <div class="flex font-inter gap-6 justify-center lg:absolute -bottom-[70px]">
+        <!-- card1 -->
+        <div class="card lg:card-side h-[140px] w-[310px] shadow-xl rounded-2xl border-b-4 border-color-text bg-white">
+          <figure class="pl-6">
+            <img
+              src="./images/people.png"
+              alt="Album" />
+          </figure>
+          <div class="card-body">
+            <h2 class="font-bold text-4xl">500K+</h2>
+            <p class=" text-xl">Registered users</p>
+          </div>
+        </div>
+        <!-- card2 -->
+        <div class="card lg:card-side h-[140px] w-[310px] shadow-xl rounded-2xl border-b-4 border-color-text bg-white">
+          <figure class="pl-6">
+            <img
+              src="./images/ticket-cupon.png"
+              alt="Album" />
+          </figure>
+          <div class="card-body">
+            <h2 class="font-bold text-4xl">1.7 lacks</h2>
+            <p class=" text-xl">Tickets sold</p>
+          </div>
+        </div>
+        <!-- card3 -->
+        <div class="card lg:card-side h-[140px] w-[310px] shadow-xl rounded-2xl border-b-4 border-color-text bg-white">
+          <figure class="pl-6">
+            <img
+              src="./images/stoppage.png"
+              alt="Album" />
+          </figure>
+          <div class="card-body">
+            <h2 class="font-bold text-4xl">80K+</h2>
+            <p class=" text-xl">Rental partners</p>
+          </div>
+        </div>
+      </div>
 
      </section>
    </header>
    <main>
+<!-- offers section -->
+<div class="lg:mt-40 mt-8 font-inter">
+  <!-- first part -->
+<div>
+  <div class="card bg-base-100 w-96 shadow-xl">
+    <div class="card-body">
+      <h2 class="font-extrabold text-4xl">15% OFF</h2>
+      <p class="">on your next purchase</p>
+      <p>on your next purchase</p>
+      
+    </div>
+  </div>
 
+  <div class="card bg-base-100 w-96 shadow-xl">
+    <div class="card-body">
+      <h2 class="card-title">Card title!</h2>
+      <p>If a dog chews shoes whose shoes does he choose?</p>
+      <div class="card-actions justify-end">
+        <button class="btn btn-primary">Buy Now</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
    </main>
    <script src="js/ticketing.js"></script>
 </body>
