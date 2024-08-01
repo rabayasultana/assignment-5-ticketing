@@ -55,7 +55,8 @@
         </div>
       </div>
       <!-- cards -->
-      <div class="flex font-inter gap-6 justify-center lg:absolute -bottom-[70px]">
+    <div class="lg:absolute -bottom-[70px] lg:w-[1200px]">
+      <div class="flex justify-center font-inter gap-6 border">
         <!-- card1 -->
         <div class="card lg:card-side h-[140px] w-[310px] shadow-xl rounded-2xl border-b-4 border-color-text bg-white">
           <figure class="pl-6">
@@ -93,34 +94,60 @@
           </div>
         </div>
       </div>
+    </div>
 
      </section>
    </header>
    <main>
 <!-- offers section -->
-<div class="lg:mt-40 mt-8 font-inter">
-  <!-- first part -->
-<div>
-  <div class="card bg-base-100 w-96 shadow-xl">
+<section class="lg:mt-40 mt-8 ">
+  <h3 class="font-bold text-4xl text-center mb-10">Best offers for you</h3>
+  <div class="flex justify-center gap-12">
+    <!-- first part -->
+<div class="flex bg-[#FFBF0F] rounded-2xl">
+  <div class="p-2 flex items-center justify-center font-inter">
     <div class="card-body">
       <h2 class="font-extrabold text-4xl">15% OFF</h2>
-      <p class="">on your next purchase</p>
-      <p>on your next purchase</p>
+      <p class="font-semibold text-xl">on your next purchase</p>
+      <p class="text-lg font-medium text-opacity-50 text-[#030712]">use by January 2024</p>
       
     </div>
   </div>
-
-  <div class="card bg-base-100 w-96 shadow-xl">
+  <div>
+    <img src="./images/cupon-devider.png" alt="">
+  </div>
+  <div class="p-2 flex items-center justify-center">
     <div class="card-body">
-      <h2 class="card-title">Card title!</h2>
-      <p>If a dog chews shoes whose shoes does he choose?</p>
-      <div class="card-actions justify-end">
-        <button class="btn btn-primary">Buy Now</button>
-      </div>
+      <h2 class="font-bold text-3xl">NEW<sub>15</sub></h2>
+      <p class="text-lg font-medium text-opacity-50 text-[#030712]">Coupon Code</p>
     </div>
   </div>
 </div>
+  <!-- Second part -->
+<div class="flex bg-[#F78C9C] rounded-2xl">
+  <div class="p-2 flex items-center justify-center font-inter">
+    <div class="card-body">
+      <h2 class="font-extrabold text-4xl">20% OFF</h2>
+      <p class="font-semibold text-xl">on your next purchase</p>
+      <p class="text-lg font-medium text-opacity-50 text-[#030712]">use by January 2024</p>
+      
+    </div>
+  </div>
+  <div>
+    <img src="./images/cupon-devider.png" alt="">
+  </div>
+  <div class="p-2 flex items-center justify-center">
+    <div class="card-body">
+      <h2 class="font-bold text-3xl">Couple 20</h2>
+      <p class="text-lg font-medium text-opacity-50 text-[#030712]">Coupon Code</p>
+    </div>
+  </div>
 </div>
+  </div>
+  <div class="flex justify-center my-10">
+    <button class="text-color-text btn btn-outline font-bold text-xl">See All Offers</button>
+  </div>
+</section>
    </main>
    <script src="js/ticketing.js"></script>
 </body>
