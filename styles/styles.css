@@ -17,17 +17,22 @@
     background-repeat: no-repeat;
 }
 
-table {
-    border-collapse: collapse;
-    width: 100%; /* Adjust width as needed */
+ 
+  
+  .grid-item {
+    /* Style for grid items */
+    text-align: end;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
   
-  td {
-    text-align: center;
-    padding: 8px;
-  }
-  
-  /* For highlighting specific cells */
-  .green-cell {
+  /* Optional: Styling for highlighted items */
+  .grid-item.highlighted {
     background-color: green;
+  }
+  .grey-bg{
+    text-align: center;
+    border-radius: 10px;
+    background-color: #F7F8F8;
+    
   }
