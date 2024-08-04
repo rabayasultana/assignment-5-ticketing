@@ -24,6 +24,8 @@
     text-align: end;
     padding-top: 10px;
     padding-bottom: 10px;
+    color:black;
+    opacity: 50%;
   }
   
   /* Optional: Styling for highlighted items */
