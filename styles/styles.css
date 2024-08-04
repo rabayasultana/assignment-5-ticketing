@@ -16,3 +16,18 @@
     background-position: center;
     background-repeat: no-repeat;
 }
+
+table {
+    border-collapse: collapse;
+    width: 100%; /* Adjust width as needed */
+  }
+  
+  td {
+    text-align: center;
+    padding: 8px;
+  }
+  
+  /* For highlighting specific cells */
+  .green-cell {
+    background-color: green;
+  }
