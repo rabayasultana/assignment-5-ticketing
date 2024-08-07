@@ -26,5 +26,10 @@ greyBgItems.forEach(item => {
         const selectedSeatText = selectedSeat.innerText;
         const selectedSeatNumber = parseFloat(selectedSeatText);
         selectedSeat.innerText = selectedSeatNumber + 1;
+
+        // total seat
+        const totalSeat = document.getElementById('total-seat');
+        totalSeat.innerText--;
+        console.log(totalSeat);
   });
 });
