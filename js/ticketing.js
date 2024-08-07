@@ -19,11 +19,12 @@ targetSection.scrollIntoView({ behavior: 'smooth' })
 const greyBgItems = document.querySelectorAll('.grey-bg');
 greyBgItems.forEach(item => {
   item.addEventListener('click', () => {
-    // Handle click event for the grey-bg item
-    // console.log('Grey BG item clicked');
-        // item.style.backgroundColor = '#1DD100';
-        // item.style.color = 'white';
-        // item.style.opacity = '1';
         item.classList.add('grid-item-highlighted')
+
+        // seat number
+        const selectedSeat = document.getElementById('selected-seat');
+        const selectedSeatText = selectedSeat.innerText;
+        const selectedSeatNumber = parseFloat(selectedSeatText);
+        selectedSeat.innerText = selectedSeatNumber + 1;
   });
 });
