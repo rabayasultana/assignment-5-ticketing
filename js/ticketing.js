@@ -15,7 +15,7 @@ targetSection.scrollIntoView({ behavior: 'smooth' })
   })
 
 
-
+let totalPrice = 0;
 const greyBgItems = document.querySelectorAll('.grey-bg');
 greyBgItems.forEach(item => {
   item.addEventListener('click', () => {
@@ -30,6 +30,22 @@ greyBgItems.forEach(item => {
         // total seat
         const totalSeat = document.getElementById('total-seat');
         totalSeat.innerText--;
-        console.log(totalSeat);
+
+        // append child
+        const seatName = item.innerText;
+        console.log(item, seatName);
+        const newChild = document.createElement('div');
+        newChild.innerHTML = `<div class="flex justify-between text-black opacity-60">
+        <p>${seatName}</p>
+        <p>Economy</p>
+        <p>550</p>
+      </div>`
+
+      const seatNameContainer = document.getElementById('seat-name-div');
+      seatNameContainer.appendChild(newChild);
+
+      // total price
+      totalPrice = totalPrice + 550;
+      console.log(totalPrice);
   });
 });
