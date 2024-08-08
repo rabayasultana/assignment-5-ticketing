@@ -351,7 +351,7 @@
 </div>
 <div class="flex justify-between bg-white p-2">
   <input placeholder="Have any coupon?" type="text" name="coupon" id="">
-  <button class="px-3 py-1 rounded-lg bg-color-text text-white ">Apply</button>
+  <button class="btn px-3 py-1 rounded-lg bg-color-text text-white"   disabled>Apply</button>
 </div>
 <div class="flex justify-between font-medium">
   <p>Grand Total</p>
@@ -367,12 +367,12 @@
         <div class="label">
           <span class="label-text font-semibold">Phone Number*</span>
         </div>
-        <input type="number" placeholder="Enter your phone number" class="input input-bordered w-full" />
+        <input id="phone-number" type="number" placeholder="Enter your phone number" class="input input-bordered w-full" required/>
         <div class="label">
           <span class="label-text font-semibold">Email ID</span>
         </div>
         <input type="email" placeholder="Enter your Email Id" class="input input-bordered w-full" />
-        <button class="btn bg-color-text text-white my-4 font-bold font-raleway text-xl" type="submit">Next</button>
+        <button id="next-button" class="btn bg-color-text text-white my-4 font-bold font-raleway text-xl" type="submit" disabled>Next</button>
         <div class="flex justify-around">
           <a href="" class="label-text-alt">Terms and Conditions</a>
           <a href="" class="label-text-alt">Cancellation Policy</a>
