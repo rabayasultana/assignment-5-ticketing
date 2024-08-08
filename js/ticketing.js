@@ -13,7 +13,7 @@ document
   .getElementById("scroll-down-btn")
   .addEventListener("click", function () {
     const targetSection = document.getElementById("target-section");
-    targetSection.scrollIntoView({ behavior: "smooth" });
+    targetSection.scrollIntoView();
   });
 
 // add event listener to grid items
@@ -68,9 +68,7 @@ greyBgItems.forEach((item) => {
       if (phoneNumber) {
         nextButton.removeAttribute("disabled");
       }
-    });
-
-    // 
+    }); 
   });
 });
 
@@ -84,3 +82,4 @@ greyBgItems.forEach((item) => {
 //       deleteButton.setAttribute('disabled', true);
 //   }
 // })
+
