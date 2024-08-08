@@ -372,10 +372,11 @@
           <span class="label-text font-semibold">Email ID</span>
         </div>
         <input type="email" placeholder="Enter your Email Id" class="input input-bordered w-full" />
+        
         <button id="next-button" class="btn bg-color-text text-white my-4 font-bold font-raleway text-xl"  onclick="event.preventDefault(); my_modal_3.showModal()"  disabled>Next</button>
         <!-- modal -->
         <dialog id="my_modal_3" class="modal">
-          <div class="modal-box p-14 text-center flex flex-col gap-4">
+          <div class="modal-box  p-14 text-center flex flex-col gap-6">
            <div class="flex justify-center">
             <img src="./images/success.png" alt="">
            </div>
@@ -384,7 +385,7 @@
               We are working hard to find the best service and deals for you.</p>
               <p class="text-xl">Shortly you will find a confirmation in your email.</p>
               <form method="dialog">
-                <button class="btn bg-[#27AE60] text-white rounded-3xl  py-2 font-semibold text-xl"  onclick="event.preventDefault(); ">Continue</button>
+                <button class="btn bg-[#27AE60] text-white rounded-3xl  py-2 font-semibold text-xl"  onclick="event.preventDefault(); my_modal_3.close() ">Continue</button>
               </form>
           </div>
         </dialog>
@@ -402,12 +403,12 @@
       </section>
     </main>
     <!-- footer -->
-    <footer class="bg-black text-neutral-content p-10">
+    <footer class="bg-black text-neutral-content p-10 font-inter">
       <div class="max-w-[1200px] mx-auto">
         <div class="footer">
           <div class="p-10">
-            <h3>BusTicketZone</h3>
-            <p>
+            <h3 class="font-raleway font-extrabold text-4xl">BusTicketZone</h3>
+            <p class="opacity-80">
               BusTicketZone is a digital platform to make your
               <br />
               daily commuting better.
@@ -415,11 +416,11 @@
           </div>
           <div class="p-10 w-full navbar-end">
             <div class="">
-              <p>Download our app</p>
+              <p class="font-semibold text-xl mb-2">Download our app</p>
               <div class="flex gap-2 border p-2 rounded-md">
                 <img src="./images/playstore.png" alt="" />
                 <div>
-                  <p>GET IT ON</p>
+                  <p class="text-sm">GET IT ON</p>
                   <h3>Google Play</h3>
                 </div>
               </div>
@@ -427,9 +428,13 @@
           </div>
         </div>
 
-        <div class="md:flex justify-between px-10">
-          <p>@all rights reserved, P-Ticket services limited.2024</p>
-          <div class="flex gap-4">
+        <div class="px-10">
+          <img src="./images/line3.png" alt="">
+        </div>
+
+        <div class="md:flex justify-between px-10 mt-8">
+          <p class="opacity-80">@all rights reserved, P-Ticket services limited.2024</p>
+          <div class="flex gap-4 font-medium">
             <p>Terms and condition</p>
             <p>Return & refund policy</p>
             <p>Privacy policy</p>
