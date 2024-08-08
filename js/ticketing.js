@@ -16,6 +16,9 @@ document
     targetSection.scrollIntoView();
   });
 
+  // grid items count
+  let count = 0;
+
 // add event listener to grid items
 const greyBgItems = document.querySelectorAll(".grey-bg");
 greyBgItems.forEach((item) => {
@@ -69,6 +72,16 @@ greyBgItems.forEach((item) => {
         nextButton.removeAttribute("disabled");
       }
     }); 
+
+    // coupon code
+    count++;
+    console.log(count);
+    const applyButton = document.getElementById('apply-button');
+    console.log(applyButton);
+    if(count == 4){
+      applyButton.removeAttribute("disabled");
+    }
+
   });
 });
 
