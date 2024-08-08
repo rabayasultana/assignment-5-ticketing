@@ -68,7 +68,7 @@ greyBgItems.forEach((item) => {
       const phoneNumberInput = document.getElementById("phone-number");
       const nextButton = document.getElementById("next-button");
 
-      phoneNumberInput.addEventListener("keypress", function (event) {
+      phoneNumberInput.addEventListener("keyup", function (event) {
         nextButton.removeAttribute("disabled");
       });
 
@@ -83,20 +83,35 @@ greyBgItems.forEach((item) => {
           const text = couponCodeInput.value;
           // console.log(text);
 
+          
+          let discount = 0;
           if (text == "NEW15") {
-            let discount = (totalPrice * 15) / 100;
-            grandTotal = totalPrice - discount;
-            grandTotalElement.innerText = grandTotal;
+            discount = (totalPrice * 15) / 100;
           } else if (text == "Couple 20") {
-            let discount = (totalPrice * 20) / 100;
-            grandTotal = totalPrice - discount;
-            grandTotalElement.innerText = grandTotal;
+            discount = (totalPrice * 20) / 100;
           } else {
             console.log("mistake");
-            let discount = 0;
-            grandTotal = totalPrice - discount;
-            grandTotalElement.innerText = grandTotal;
           }
+          // updating grandtotal
+          grandTotal = totalPrice - discount;
+          grandTotalElement.innerText = grandTotal;
+
+              // append discount price
+     if(discount !== 0){
+      const discountDiv = document.createElement("div");
+      discountDiv.innerHTML = ` <div class="flex justify-between font-medium">
+    <p>Discounted Price</p>
+    <p>BDT ${discount}</p>
+  </div>`
+
+  const priceContainer = document.getElementById("price-div");
+  priceContainer.appendChild(discountDiv);
+
+  const couponApplyDiv = document.getElementById('coupon-apply-div');
+  couponApplyDiv.classList.add('hidden');
+     }
+
+
         });
       }
     }
@@ -113,3 +128,14 @@ greyBgItems.forEach((item) => {
 //       deleteButton.setAttribute('disabled', true);
 //   }
 // })
+
+
+      // append discount price
+  //     const discountDiv = document.createElement("div");
+  //     discountDiv.innerHTML = ` <div class="flex justify-between font-medium">
+  //   <p>Discounted Price</p>
+  //   <p>BDT ${}</p>
+  // </div>`
+
+  // const priceContainer = document.getElementById("price-div");
+  // priceContainer.appendChild(discountDiv);

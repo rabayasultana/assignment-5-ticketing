@@ -345,11 +345,15 @@
  
 </div>
 <img src="./images/Line 6.png" alt="">
-<div class="flex justify-between font-medium">
-  <p>Total Price</p>
-  <p>BDT <span id="total-price">0</span></p>
+<!-- price div -->
+<div id="price-div" class="flex flex-col gap-3">
+  <div class="flex justify-between font-medium">
+    <p>Total Price</p>
+    <p>BDT <span id="total-price">0</span></p>
+  </div>
 </div>
-<div class="flex justify-between bg-white p-2">
+
+<div id="coupon-apply-div" class="flex justify-between bg-white p-2">
   <input placeholder="Have any coupon?" type="text" name="coupon" id="coupon-code-input">
   <button id="apply-button" class="btn px-3 py-1 rounded-lg bg-color-text text-white"   disabled>Apply</button>
 </div>
