@@ -90,7 +90,7 @@ greyBgItems.forEach((item) => {
           } else if (text == "Couple 20") {
             discount = (totalPrice * 20) / 100;
           } else {
-            console.log("mistake");
+            alert("Invalid discount code");
           }
           // updating grandtotal
           grandTotal = totalPrice - discount;
