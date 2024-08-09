@@ -1,4 +1,3 @@
-console.log("ticketing");
 tailwind.config = {
   theme: {
     extend: {
@@ -83,59 +82,37 @@ greyBgItems.forEach((item) => {
           const text = couponCodeInput.value;
           // console.log(text);
 
-          
           let discount = 0;
           if (text == "NEW15") {
             discount = (totalPrice * 15) / 100;
           } else if (text == "Couple 20") {
             discount = (totalPrice * 20) / 100;
           } else {
-            alert("Invalid discount code");
+            alert("Invalid Coupon code");
           }
           // updating grandtotal
           grandTotal = totalPrice - discount;
           grandTotalElement.innerText = grandTotal;
 
-              // append discount price
-     if(discount !== 0){
-      const discountDiv = document.createElement("div");
-      discountDiv.innerHTML = ` <div class="flex justify-between font-medium">
+          // append discount price
+          if (discount !== 0) {
+            const discountDiv = document.createElement("div");
+            discountDiv.innerHTML = ` <div class="flex justify-between font-medium">
     <p>Discounted Price</p>
     <p>BDT ${discount}</p>
-  </div>`
+  </div>`;
 
-  const priceContainer = document.getElementById("price-div");
-  priceContainer.appendChild(discountDiv);
+            const priceContainer = document.getElementById("price-div");
+            priceContainer.appendChild(discountDiv);
 
-  const couponApplyDiv = document.getElementById('coupon-apply-div');
-  couponApplyDiv.classList.add('hidden');
-     }
-
-
+            const couponApplyDiv = document.getElementById("coupon-apply-div");
+            couponApplyDiv.classList.add("hidden");
+          }
         });
       }
     }
+    else {
+      alert("You have crossed the limit to select seat");
+    }
   });
 });
-
-// document.getElementById('delete-confirm').addEventListener('keyup', function(event){
-//   const text = event.target.value;
-//   const deleteButton = document.getElementById('btn-delete');
-//   if(text === 'delete'){
-//       deleteButton.removeAttribute('disabled');
-//   }
-//   else{
-//       deleteButton.setAttribute('disabled', true);
-//   }
-// })
-
-
-      // append discount price
-  //     const discountDiv = document.createElement("div");
-  //     discountDiv.innerHTML = ` <div class="flex justify-between font-medium">
-  //   <p>Discounted Price</p>
-  //   <p>BDT ${}</p>
-  // </div>`
-
-  // const priceContainer = document.getElementById("price-div");
-  // priceContainer.appendChild(discountDiv);
